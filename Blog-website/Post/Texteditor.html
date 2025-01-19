@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="Texteditor.css">
+</head>
+
+<body>
+  <div class="main2">
+    <div class="nav">
+      <div class="left">
+        <div class="fontstyle">
+          <img class="xyz" src="../Resources/img1.svg" alt="Font Style">
+          <select class="font" id="fontSelect">
+            <option value="Arial" selected>Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="Impact">Impact</option>
+          </select>
+        </div>
+
+        <div class="font_size">
+          <img class="xyz" src="../Resources/img2.svg" alt="Font Size">
+          <select class="font" id="fontSize">
+            <option value="1">Small</option>
+            <option value="3" selected>Normal</option>
+            <option value="5">Large</option>
+            <option value="7">Extra Large</option>
+          </select>
+        </div>
+
+        <div class="formating" id="abc">
+          <button id="bold" class="btn"><img class="xyz" src="../Resources/img3.svg" alt="Bold"></button>
+          <button id="italic" class="btn"><img class="xyz" src="../Resources/img4.svg" alt="Italic"></button>
+          <button id="underline" class="btn"><img class="xyz" src="../Resources/img5.svg" alt="Underline"></button>
+          <button id="strikeThrough" class="btn"><img class="xyz" src="../Resources/img6.svg" alt="Strike-through"></button>
+        </div>
+
+        <div class="link_image">
+          <a id="insertLink"><img class="xyz" src="../Resources/img7.svg" alt="Insert Link"></a>
+          <a id="insertImage"><img class="xyz" src="../Resources/img8.svg" alt="Insert Image"></a>
+        </div>
+
+        <div class="bullet">
+          <img class="xyz" id="bulletedList" src="../Resources/img9.svg" alt="Bulleted List">
+          <img class="xyz" id="numberedList" src="../Resources/img10.png" alt="Numbered List">
+        </div>
+      </div>
+
+      <div class="right">
+        <button>Publish</button>
+        <button>Save as Draft</button>
+      </div>
+    </div>
+
+    <div id="textArea" contenteditable="true" placeholder="Start Writing..."></div>
+  </div>
+
+  <script src="Texteditor.js"></script>
+</body>
+
+</html>

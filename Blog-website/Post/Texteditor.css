@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #007bff;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+.fontstyle,
+.font_size,
+.formating,
+.link_image,
+.bullet {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.xyz {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.xyz:hover {
+    transform: scale(1.25);
+}
+
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 150px;
+}
+
+button {
+    padding: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+button.active img {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(98%) saturate(7543%) hue-rotate(168deg) brightness(92%) contrast(96%);
+}
+
+.right button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: #0056b3;
+}
+
+#textArea {
+    flex-grow: 1;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 30px 40px;
+    font-size: 18px;
+    line-height: 1.8;
+    background-color: #fff;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#textArea:empty:before {
+    content: attr(placeholder);
+    color: #aaa;
+    pointer-events: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.formating button img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Customizing dropdown appearance */
+select {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Align icons centrally within buttons */
+.formating button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Active button styling */
+.formating button.active {
+    background-color: #bbdf58;
+    border-radius: 5px;
+}

@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #57A6A1;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Content Section */
+.child-one {
+  position: absolute;
+  height: 97vh;
+  width: 41.5vw;
+  background-color: #240750;
+  right: 0;
+  margin: 0.7%;
+  border-radius: 15px;
+  padding: 2rem;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* Face Components Section */
+.child-two {
+  position: absolute;
+  left: 0;
+  width: 58.5vw;
+  height: 100vh;
+}
+
+.sub-child1 {
+  width: 473px;
+  height: 250px;
+  background-color: #FF8533;
+  position: absolute;
+  top: 505px;
+  left: 180px;
+  border-radius: 250px 250px 0 0;
+  z-index: 100;
+  display: flex;
+}
+
+.sub-child1 .eye1,
+.sub-child1 .eye2 {
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  margin: 40px;
+  position: relative;
+  top: 80px;
+  left: 180px;
+  border-radius: 50%;
+}
+
+.sub-child1 .smile {
+  position: relative;
+  height: 23px;
+  width: 46px;
+  background-color: #000;
+  top: 155px;
+  left: 55px;
+  border-radius: 0 0 50px 50px;
+}
+
+.sub-child2 {
+  width: 200px;
+  height: 325px;
+  background-color: #E6CB0C;
+  position: absolute;
+  top: 430px;
+  left: 707px;
+  border-radius: 250px 250px 0 0;
+  z-index: 100;
+}
+
+.sub-child2 .eye3 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #1B1D21;
+  position: absolute;
+  top: 65px;
+  left: 65px;
+}
+
+.sub-child2 .mouth {
+  height: 10px;
+  width: 120px;
+  background-color: #000;
+  position: absolute;
+  top: 100px;
+  left: 112px;
+}
+
+.sub-child3 {
+  width: 177px;
+  height: 443px;
+  background-color: #1B1D21;
+  position: absolute;
+  top: 312px;
+  left: 576px;
+  z-index: 50;
+  display: flex;
+}
+
+.sub-child3 .eye4,
+.sub-child3 .eye5 {
+  height: 25px;
+  width: 25px;
+  background-color: whitesmoke;
+  margin: 15px;
+  border-radius: 50%;
+  margin-top: 50px;
+  position: relative;
+  left: 80px;
+}
+
+.sub-child3 .eye4 .inner-eye,
+.sub-child3 .eye5 .inner-eye {
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.sub-child4 {
+  width: 289px;
+  height: 620px;
+  background-color: #6729FF;
+  position: absolute;
+  left: 371px;
+  top: 135px;
+  z-index: 0;
+  display: flex;
+}
+
+.sub-child4 .eye6,
+.sub-child4 .eye7 {
+  margin: 40px;
+  height: 20px;
+  width: 20px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  position: relative;
+  left: 80px;
+  top: 10px;
+}
+
+.sub-child4 .eye6 .inner-eye,
+.sub-child4 .eye7 .inner-eye {
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  margin: 5px;
+}
+
+.sub-child4 .nose {
+  height: 80px;
+  width: 15px;
+  background-color: #000;
+  position: absolute;
+  top: 60px;
+  left: 170px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .child-one {
+    width: 45vw;
+  }
+
+  .child-two {
+    width: 55vw;
+    transform: scale(0.8);
+    transform-origin: left center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .child-one {
+    position: relative;
+    width: 95%;
+    height: auto;
+    min-height: 90vh;
+    margin: 2.5% auto;
+  }
+
+  .child-two {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    transform: scale(0.6);
+    transform-origin: center top;
+  }
+
+  /* Adjust positions for mobile */
+  .sub-child1 {
+    transform: scale(0.8);
+    left: 50%;
+    margin-left: -236px;
+    /* Half of the element's width */
+  }
+
+  .sub-child2 {
+    transform: scale(0.8);
+    left: 50%;
+    margin-left: -100px;
+  }
+
+  .sub-child3 {
+    transform: scale(0.8);
+    left: 50%;
+    margin-left: -88px;
+  }
+
+  .sub-child4 {
+    transform: scale(0.8);
+    left: 50%;
+    margin-left: -144px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .child-one {
+    width: 98%;
+    margin: 1% auto;
+    padding: 1rem;
+  }
+
+  .child-two {
+    transform: scale(0.45);
+  }
+}
+
+/* Keep your original text styles */
+.Heading {
+  font-size: 2.5rem;
+  color: #FF8533;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.para {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.Head-2 {
+  font-size: 1.5rem;
+  color: #E6CB0C;
+  margin-top: 3rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #E6CB0C;
+  padding-bottom: 0.3rem;
+}
+
+#abc {
+  margin-top: 25%;
+}
+
+/* Maintain your original animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
